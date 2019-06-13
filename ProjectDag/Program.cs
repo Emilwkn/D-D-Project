@@ -19,9 +19,9 @@ namespace ProjectDag
 
             //Characterstats - Goblins
             string enemyCharacter = "Goblins";
-            int enemyHP = 20;
-            int enemyAttack = 5;
-            int enemyEvade = 3;
+            int GoblinHP = 20;
+            int GoblinAttack = 5;
+            int GoblinEvade = 3;
             int EXPGoblin = 10;
 
 
@@ -63,21 +63,21 @@ namespace ProjectDag
                         {
                             Console.WriteLine("Attack");
                             atk = rand.Next(0, 11);
-                            if (atk > enemyEvade)
+                            if (atk > GoblinEvade)
                             {
                                 Console.WriteLine("Hit!\n");
-                                enemyHP -= playerAttack;
+                                GoblinHP -= playerAttack;
                             }
                             if (atk == 10)
                             {
                                 Console.WriteLine("Critical Hit!!!\n");
-                                enemyHP = enemyHP - (playerAttack * 2);
+                                GoblinHP = GoblinHP - (playerAttack * 2);
                             }
-                            if (atk <= enemyEvade)
+                            if (atk <= GoblinEvade)
                             {
                                 Console.WriteLine("Miss.\n");
                             }
-                            else if (enemyHP <= 0)
+                            else if (GoblinHP <= 0)
                             {
                                 Console.WriteLine("The monster has been defeated!\n");
                                 Console.ReadKey();
@@ -92,12 +92,12 @@ namespace ProjectDag
                             if (atk > playerEvade)
                             {
                                 Console.WriteLine("It hit. ouch\n");
-                                playerHP -= enemyAttack;
+                                playerHP -= GoblinAttack;
                             }
                             if (atk == 10)
                             {
                                 Console.WriteLine("A CRITICAL HIT! ARRGH\n");
-                                playerHP = playerHP - (enemyAttack * 2);
+                                playerHP = playerHP - (GoblinAttack * 2);
                             }
                             if (playerHP <= 0)
                             {
