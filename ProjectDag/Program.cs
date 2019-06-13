@@ -22,6 +22,7 @@ namespace ProjectDag
             int enemyHP = 20;
             int enemyAttack = 5;
             int enemyEvade = 3;
+            int EXPGoblin = 10;
 
 
             //Characterstats - Boss
@@ -30,6 +31,7 @@ namespace ProjectDag
             Random boss = new Random();
             int bossAttack; //(Random 5-10)
             int bossEvade = 2;
+            int EXPBoss = 50;
 
             Random rand = new Random();
 
