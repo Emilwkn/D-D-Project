@@ -10,19 +10,43 @@ namespace ProjectDag
     {
         static void Main(string[] args)
         {
+            //Player
+            Hero hero = new Hero
+                ("Jack", 100, 10, 8, 0);
+
+            //Monsters
+            Monster gob = new Monster
+                ("Goblin", 20, 5, 3, 10);
+            Monster gobShaman = new Monster
+                ("GoblinShaman", 15, 2, 0, 15);
+
+            //Boss'
+            Boss gobBoss = new Boss
+                ("Goblin King", 75, 5, 10, 2, 50);
+
             //Characterstats - Player
             string playerCharacter = "Player";
             int playerHP = 100;
             int playerAttack = 10;
             int playerEvade = 8;
+            int PlayerEXP = 0;
 
 
-            //Characterstats - Goblins
-            string enemyCharacter = "Goblins";
+            //Characterstats - Goblin
+            string enemyCharacter = "Goblin";
             int GoblinHP = 20;
             int GoblinAttack = 5;
             int GoblinEvade = 3;
             int EXPGoblin = 10;
+
+            //Charecterstats - Goblin Shaman
+            string enemyGoblinShaman = "Goblin Shaman";
+            int GoblinShamanHP = 15;
+            int GoblinShamanATK = 2;
+            int GoblinShamanEvade = 0;
+            int EXPGoblinShaman = 15;
+            //Spell
+            int LesserHeal = 10;
 
 
             //Characterstats - Boss
