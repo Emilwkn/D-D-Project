@@ -12,13 +12,13 @@ namespace ProjectDag
         {
             //Player
             Hero hero = new Hero
-                ("Jack", 100, 10, 8, 0);
+                ("Jack", 100, 10, 8, 20, 0);
 
             //Monsters
             Monster gob = new Monster
-                ("Goblin", 20, 5, 3, 10);
+                ("Goblin", 20, 5, 3, 0, 10);
             Monster gobShaman = new Monster
-                ("GoblinShaman", 15, 2, 0, 15);
+                ("GoblinShaman", 15, 2, 0, 10, 15);
 
             //Boss'
             Boss gobBoss = new Boss

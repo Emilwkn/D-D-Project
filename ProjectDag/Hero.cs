@@ -13,6 +13,7 @@ namespace ProjectDag
         public double HP { get; set; } = 0;
         public double Atk { get; set; } = 0;
         public double Evade { get; set; } = 0;
+        public double MP { get; set; } = 0;
         public double EXP { get; set; } = 0;
 
 
@@ -20,12 +21,14 @@ namespace ProjectDag
             double hp = 0,
             double atk = 0,
             double evade = 0,
+            double mp = 0,
             double exp = 0)
         {
             Name = name;
             HP = hp;
             Atk = atk;
             Evade = evade;
+            MP = mp;
             EXP = exp;
         }
     }
