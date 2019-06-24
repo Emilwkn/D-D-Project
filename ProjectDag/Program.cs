@@ -24,6 +24,16 @@ namespace ProjectDag
             Boss gobBoss = new Boss
                 ("Goblin King", 75, 5, 10, 2, 50);
 
+            //Spells
+            Spell HeavyFall = new Spell
+                ("Heavy Fall", "Offense", 5, 2,
+                "Bring down your weapon in one big motion attempting to sever the enemy in twain" +
+                ": dealing 200% dmg.");
+            Spell LesserHeal = new Spell
+                ("Lesser Heal", "Support", 5, 0.2,
+                "Say a prayer to a higher power and receive a boon of mending" +
+                ": heal 20% of target's max Health");
+
             //Characterstats - Player
             string playerCharacter = "Player";
             int playerHP = 100;
@@ -45,8 +55,6 @@ namespace ProjectDag
             int GoblinShamanATK = 2;
             int GoblinShamanEvade = 0;
             int EXPGoblinShaman = 15;
-            //Spell
-            int LesserHeal = 10;
 
 
             //Characterstats - Boss
