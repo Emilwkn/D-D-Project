@@ -15,24 +15,55 @@ namespace ProjectDag
                 ("Jack", 100, 10, 8, 20, 0);
 
             //Monsters
+            //Floor1
             Monster gob = new Monster
                 ("Goblin", 20, 5, 3, 0, 10);
             Monster gobShaman = new Monster
                 ("GoblinShaman", 15, 2, 0, 10, 15);
+            //Floor2
+            Monster skeleton = new Monster
+                ("Skeleton", 40, 10, 5, 10, 25);
+            Monster skeletonMage = new Monster
+                ("Bone-Magi", 30, 5, 5, 20, 30);
+            Monster boneKnight = new Monster
+                ("Bone-Knight", 60, 15, 3, 15, 40);
 
             //Boss'
+            //floor1
             Boss gobBoss = new Boss
-                ("Goblin King", 75, 5, 10, 2, 50);
+                ("Goblin King", 75, 5, 10, 2, 0, 50);
+            //floor2
+            Boss lich = new Boss
+                ("Lich", 100, 5, 10, 7, 50, 120);
+
 
             //Spells
+            //Hero
             Spell HeavyFall = new Spell
                 ("Heavy Fall", "Offense", 5, 2,
                 "Bring down your weapon in one big motion attempting to sever the enemy in twain" +
                 ": dealing 200% dmg.");
+            //Hero and goblin shaman
             Spell LesserHeal = new Spell
                 ("Lesser Heal", "Support", 5, 0.2,
                 "Say a prayer to a higher power and receive a boon of mending" +
-                ": heal 20% of target's max Health");
+                ": heal 20% of target's max Health.");
+            //skeleton, bone-knight
+            Spell rattleStrike = new Spell
+                ("Rattle Strike", "Offense", 5, 1.2,
+                "Strike your foe with a bone ratteling attack, weakening them for a moment" + 
+                ": dealing 120% dmg, targets next Offensive action -20%.");
+            //lich, hero
+            Spell firebolt = new Spell
+                ("FireBolt", "Offense", 5, 1,
+                "Conjure a bolt of flames and send it hurling at an unfortunate soul" + 
+                ": dealing 100% magicdmg.");
+            //lich
+            Spell deathTouch = new Spell
+                ("Death touch", "Offense", 15, 3,
+                "Drain the soul of the living, revitalising the casters body and leave the target in agonizing pain" + 
+                ": dealing 300% magicdmg and heal for 5% of the dmg dealt.");
+
 
             //Characterstats - Player
             string playerCharacter = "Player";

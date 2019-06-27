@@ -13,6 +13,7 @@ namespace ProjectDag
         public double AtkMin { get; set; } = 0;
         public double AtkMax { get; set; } = 0;
         public double Evade { get; set; } = 0;
+        public double SP { get; set; } = 0;
         public double EXP { get; set; } = 0;
 
 
@@ -23,6 +24,7 @@ namespace ProjectDag
             double atkmin = 0,
             double atkmax =0,
             double evade = 0,
+            double sp = 0,
             double exp = 0)
         {
             Name = name;
@@ -30,6 +32,7 @@ namespace ProjectDag
             AtkMin = atkmin;
             AtkMax = atkmax;
             Evade = evade;
+            SP = sp;
             EXP = exp;
         }
 
